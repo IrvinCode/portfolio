@@ -1,8 +1,9 @@
 ---
 import { t } from 'i18n:astro'
-import CardProject from '@components/CardProject.astro'
+// import CardProject from '@components/CardProject.astro'
+import WorkIn from '@components/WorkInProgress.astro'
 
-const { title, projects } = t('projects', {
+const { title } = t('projects', {
   returnObjects: true
 })
 ---
@@ -11,7 +12,7 @@ const { title, projects } = t('projects', {
   <h2>
     <span>{title}</span>
   </h2>
-  {
+  <!-- {
     projects.map(({ title, description, image, techs, code, preview }) => (
       <CardProject
         src={image}
@@ -23,7 +24,8 @@ const { title, projects } = t('projects', {
         preview={preview}
       />
     ))
-  }
+  } -->
+    <WorkIn />
 </section>
 
 <style>

@@ -3,7 +3,7 @@ import Profile from '@images/profile.jpg'
 import { Picture } from 'astro:assets'
 import { t } from 'i18n:astro'
 
-const { title, subtitle, description } = t('about', {
+const { title, subtitle, description, description2 } = t('about', {
   returnObjects: true
 })
 
@@ -30,6 +30,7 @@ const normalizeTitle = title
     <div class="description">
       <h3 class="headline-2">{subtitle}</h3>
       <p>{description}</p>
+      <p>{description2}</p>
     </div>
   </section>
 </section>

@@ -1,0 +1,61 @@
+---
+import { t } from 'i18n:astro'
+
+const { title, message } = t('workInProgress', {
+  returnObjects: true
+})
+---
+
+<section id="under-construction" class="under-construction">
+  <div class="content">
+    <div class="icon">🚧</div>
+    <h2>{title}</h2>
+    <p>{message}</p>
+  </div>
+</section>
+
+<style>
+    .icon {
+        font-size: 3rem;
+        color: #0078D4;
+        margin-bottom: 1rem;
+        animation: bounce 1.5s infinite;
+    }
+
+    .under-construction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        text-align: center;
+        background-color: color-mix(in srgb, var(--bg-color), transparent 10%);
+        backdrop-filter: blur(8px);
+        color: var(--text-color);
+    }
+
+    .under-construction .content {
+        max-width: 600px;
+        padding: 2rem;
+        border-radius: 16px;
+        background-color: color-mix(in srgb, var(--bg-secondary-color), transparent 20%);
+        border: 1px solid var(--border-color);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .under-construction h1 {
+        font-size: 2rem;
+        margin-top: 1rem;
+        color: var(--text-highlight-color);
+    }
+
+    .under-construction p {
+        font-size: 1.125rem;
+        margin-top: 0.5rem;
+        color: var(--text-secondary-color);
+    }
+
+    .under-construction svg {
+        color: var(--icon-color);
+        margin-bottom: 1rem;
+    }
+</style>

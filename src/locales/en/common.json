@@ -127,10 +127,15 @@
       }
     ]
   },
+  "workInProgress": {
+    "title": "In progress",
+    "message": "Extending my knowledge with new projects"
+  },
   "about": {
     "title": "About me",
-    "subtitle": "I am a frontend developer who makes data driven decisions.",
-    "description": "I am a frontend developer with more than 5 years of experience in creating innovative digital solutions. My focus is on improving user experience and optimizing operational efficiency through the development of web interfaces and mobile applications. Throughout my career, I have led redesign projects, implemented ERPs that have saved weekly work hours, and collaborated with design and development teams to deliver high-impact products. In addition, I specialize in modern technologies such as Vue.js, Figma, Kotlin and Swift, and have a strong focus on code quality through unit testing."
+    "subtitle": "Frontend Developer focused on data and optimization",
+    "description": "I am a frontend developer with more than five years of experience in creating digital solutions focused on user experience and operational efficiency. Specialized in technologies such as Vue.js, JavaScript and Figma, I have led ERP redesign and development projects, achieving significant improvements in usability and reducing operational times.",
+    "description2": "My focus on code quality and unit testing ensures that the products I develop are reliable and high performing. With a strong commitment to continuous improvement, I enjoy working in teams to deliver projects that bring tangible value to users and the business."
   },
   "contact": {
     "title": "Ready to make your dreams come true?",

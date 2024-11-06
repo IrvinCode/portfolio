@@ -1,0 +1,57 @@
+---
+import { t } from 'i18n:astro'
+
+const { title, message } = t('workInProgress', {
+  returnObjects: true
+})
+---
+
+<section class="en-desarrollo">
+  <div class="container">
+    <div class="icon">🚧</div>
+    <h2>{title}</h2>
+    <p>{message}</p>
+  </div>
+</section>
+
+<style>
+  /* Estilos de la sección de desarrollo */
+  .en-desarrollo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .en-desarrollo .container {
+    max-width: 600px;
+  }
+
+  .icon {
+    font-size: 3rem;
+    color: #0078D4;
+    margin-bottom: 1rem;
+    animation: bounce 1.5s infinite;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    color: #0078D4;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+</style>

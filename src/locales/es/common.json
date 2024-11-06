@@ -1,5 +1,5 @@
 {
-  "title": "Desarrollador Frontend - Irvin Garcia",
+  "title": "Frontend Developer | UX/UI Optimization - Irvin Garcia",
   "description": "Desarrollador Frontend de Baja California, México. Especialista en HTML5, CSS5, JavaScript ES6+, Vue.js y Wix.",
   "navbar": [
     {
@@ -127,10 +127,15 @@
       }
     ]
   },
+  "workInProgress": {
+    "title": "En desarrollo",
+    "message": "Extentiendo mi conocimiento con proyectos nuevos"
+  },
   "about": {
     "title": "Sobre mí",
-    "subtitle": "Soy un desarrollador Frontend que toma sus desiciones basados en datos",
-    "description": "Soy un desarrollador frontend con más de 5 años de experiencia en la creación de soluciones digitales innovadoras. Mi enfoque está en mejorar la experiencia de usuario y optimizar la eficiencia operativa a través del desarrollo de interfaces web y aplicaciones móviles. A lo largo de mi carrera, he liderado proyectos de rediseño, implementado ERPs que han ahorrado horas de trabajo semanales, y he colaborado con equipos de diseño y desarrollo para entregar productos de alto impacto. Además, me especializo en tecnologías modernas como Vue.js, Figma, Kotlin y Swift, y tengo un fuerte enfoque en la calidad de código mediante pruebas unitarias."
+    "subtitle": "Desarrollador Frontend enfocado en datos y optimización",
+    "description": "Soy un desarrollador Frontend con más de cinco años de experiencia en la creación de soluciones digitales centradas en la experiencia del usuario y la eficiencia operativa. Especializado en tecnologías como Vue.js, JavaScript y Figma, he liderado proyectos de rediseño y desarrollo de ERP, logrando mejorar significativamente la usabilidad y reducir tiempos operativos.",
+    "description2": "Mi enfoque en la calidad de código y en pruebas unitarias asegura que los productos que desarrollo sean fiables y de alto rendimiento. Con un fuerte compromiso hacia la mejora continua, disfruto trabajar en equipo para llevar a cabo proyectos que aporten valor tangible a los usuarios y al negocio."
   },
   "contact": {
     "title": "¿Listo para dar vida a tus ideas?",
