@@ -8,7 +8,8 @@ const {
   title,
   job_title: jobTitle,
   description,
-  cta
+  cta,
+  download_cv
 } = t('hero', {
   returnObjects: true
 })
@@ -26,8 +27,8 @@ const {
       <p>{description}</p>
     </section>
     <section class="button-container">
-      <Button class="filled" href="#">{cta}</Button>
-      <Button href="#">
+      <Button class="filled" href={download_cv} download="CV-IrvinGarcia.pdf">{cta}</Button>
+      <Button href="https://www.linkedin.com/in/irvinsgarcia/" target="_blank">
         <Icon name="linkedin" size={24} />
         <span>LinkedIn</span>
       </Button>
@@ -38,7 +39,6 @@ const {
 
 <style>
   .hero {
-    padding-top: 113px;
     padding-bottom: 56px;
 
     @media (width >= 768px) {

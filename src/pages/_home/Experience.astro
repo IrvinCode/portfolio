@@ -35,7 +35,7 @@ const normalizeTitle = title
     </div>
     <div class="jobs-descriptions">
       {
-        jobsDescription.map(({ title, time, description, list }, index) => (
+        jobsDescription.map(({ title, time, description, list, languages}, index) => (
           <div class:list={['description tabcontent', { active: index === 0 }]}>
             <h3>{title}</h3>
             <div class="job-time">
@@ -55,6 +55,12 @@ const normalizeTitle = title
                 <li>{item}</li>
               ))}
             </ul>
+
+            <div class="languages-used">
+              {languages.map((lang) => (
+                <span class="badge">{lang}</span>
+              ))}
+            </div>
           </div>
         ))
       }
@@ -190,6 +196,21 @@ const normalizeTitle = title
           display: flex;
           align-items: center;
           gap: 16px;
+
+          & .badge {
+            background-color: var(--bg-secondary-color);
+            border-radius: 1000px;
+            padding: 2px 12px;
+            font-size: 0.875rem;
+            transition: var(--transition-bg);
+          }
+        }
+
+        & .languages-used {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          margin-bottom: 16px;
 
           & .badge {
             background-color: var(--bg-secondary-color);

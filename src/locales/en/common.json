@@ -1,6 +1,6 @@
 {
-  "title": "Web Frontend Developer - Felix Rangel",
-  "description": "Web Frontend Developer from Esteli, Nicaragua. Specialist in HTML5, CSS5, JavaScript ES6+, Node.js and WordPress.",
+  "title": "Frontend Developer - Irvin Sebastian Garcia Flores",
+  "description": "Web Frontend Developer from Baja California, México. Specialist in HTML5, CSS5, JavaScript ES6+, Vue.js and Wix.",
   "navbar": [
     {
       "label": "Home",
@@ -21,27 +21,37 @@
   ],
   "hero": {
     "job_availability": "Available for work!",
-    "title": "Hello I'm Felix Rangel!",
-    "job_title": "<strong>Web Frontend Developer</strong> from Esteli, Nicaragua.",
-    "description": "Specialist in HTML5, CSS5, JavaScript ES6+, Node.js and WordPress.",
-    "cta": "Contact me"
+    "title": "Hello I'm Irvin Sebastian Garcia Flores!",
+    "job_title": "<strong>Frontend Developer</strong> from Baja California, México.",
+    "description": "Specialist in HTML5, CSS5, JavaScript ES6+, Vue.js and Wix.",
+    "cta": "Download CV",
+    "download_cv": "/public/CVen.pdf"
   },
   "experience": {
     "title": "Work Experience",
     "jobs": {
-      "jobs_title": ["Freelance", "HD Media Nicaragua"],
+      "jobs_title": ["Alibre.io", "Ahorrolibre Inc."],
       "jobs_description": [
         {
-          "title": "Web Frontend Developer",
-          "time": ["Dec 2021"],
-          "description": "I create modern websites with good UI/UX practices. I also manage SEO, security and performance optimizations to increase conversion and visits.",
-          "list": ["Design of websites", "Optimization of websites"]
+          "title": "Frontend Developer",
+          "time": ["July 2019", "August 2024"],
+          "description": "Responsible for the design and development of specific solutions for the company's issues, collaborating with various areas within the company to improve the end user experience and in turn optimizing internal processes by implementing new features, redesigning web platforms and the App.",
+          "list": ["Led a complete redesign of the main App based on user data, which significantly increased satisfaction and usability", "Developed and optimized key functionalities in the ERP, increasing operational efficiency by 70%", "Implemented an ERP from scratch, saving the operational team more than 10 hours of work per week", "Collaborated with designers and developers in the redesign of the main App to improve the user experience", "Developed landing pages for products in testing phase, improving their visibility to customers", "Maintained and updated the company's web pages, ensuring that information was always up to date for users"],
+          "languages": ["#HTML", "#CSS", "#Javascript", "#Vue.js", "#Figma", "#Wix"]
         },
         {
-          "title": "WordPress Web Developer",
-          "time": ["Nov 2020", "Oct 2021"],
-          "description": "I was in charge of developing WordPress websites for clients in Nicaragua, during my time at the agency I contributed my knowledge in web security by increasing measures and decreasing security gaps in WordPress, configuring plugins and setting HTTP headers such as Content-Security-Policy (CSP), Cross-Origin-Resource-Policy (CORP), Cross-Origin-Opener-Policy (COOP), etc.",
-          "list": ["Design of websites", "Optimization of websites"]
+          "title": "Frontend Developer",
+          "time": ["June 2018", "July 2019"],
+          "description": "I worked on developing innovative solutions, focusing on creating features and unit testing for both Android and iOS Apps. My focus was on improving the user experience and ensuring code quality.",
+          "list": ["Widget development for continuous tracking in active products", "Development of specific sections within Apps", "Integration of unit tests in Apps using JUnit (Android) and XCTest (iOS)"],
+          "languages": ["#Android", "#iOS", "#XCTest", "#JUnit"]
+        },
+        {
+          "title": "Student Intern",
+          "time": ["January 2018", "June 2018"],
+          "description": "I learned best coding practices (DRY, KISS, Documentation, design patterns), programming languages mainly PHP and Javascript, programming paradigms (Imperative, OOP, Functional), database (relational and non-relational), understanding the use of Tools and IDE, unit testing and debugging.",
+          "list": ["App development with API integration", "Integration of unit tests on Web using Jest"],
+          "languages": ["#Android", "#iOS", "#PHP", "#Javascript", "#PostgreSQL"]
         }
       ]
     }
@@ -119,8 +129,8 @@
   },
   "about": {
     "title": "About me",
-    "subtitle": "I'm a Midudev and ManzDev mod but I'm happier being an AnaRangel mod",
-    "description": "I am a Frontend Web Developer and WordPress Developer with over 3 years of experience, specialized in creating modern designs and optimizing web performance, with a focus on technologies such as HTML 5, CSS 3, JavaScript ES6+ and WordPress. I handle frameworks such as React and Astro, and I am an expert in WordPress visual builders, in addition to having a strong technical knowledge in Core Web Vitals, which makes me a passionate and highly qualified professional for any web development project."
+    "subtitle": "I am a frontend developer who makes data driven decisions.",
+    "description": "I am a frontend developer with more than 5 years of experience in creating innovative digital solutions. My focus is on improving user experience and optimizing operational efficiency through the development of web interfaces and mobile applications. Throughout my career, I have led redesign projects, implemented ERPs that have saved weekly work hours, and collaborated with design and development teams to deliver high-impact products. In addition, I specialize in modern technologies such as Vue.js, Figma, Kotlin and Swift, and have a strong focus on code quality through unit testing."
   },
   "contact": {
     "title": "Ready to make your dreams come true?",

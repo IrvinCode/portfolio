@@ -1,6 +1,6 @@
 {
-  "title": "Desarrollador Web Frontend - Felix Rangel",
-  "description": "Desarrollador Web Frontend de Estelí, Nicaragua. Especialista en HTML5, CSS5, JavaScript ES6+, Node.js y WordPress.",
+  "title": "Desarrollador Frontend - Irvin Garcia",
+  "description": "Desarrollador Frontend de Baja California, México. Especialista en HTML5, CSS5, JavaScript ES6+, Vue.js y Wix.",
   "navbar": [
     {
       "label": "Inicio",
@@ -21,27 +21,37 @@
   ],
   "hero": {
     "job_availability": "¡Disponible para trabajar!",
-    "title": "¡Hola soy Felix Rangel!",
-    "job_title": "<strong>Desarrollador Web Frontend</strong> de Estelí, Nicaragua.",
-    "description": "Especialista en HTML5, CSS5, JavaScript ES6+, Node.js y WordPress.",
-    "cta": "Contactame"
+    "title": "¡Hola soy Irvin Garcia!",
+    "job_title": "<strong>Desarrollador Frontend</strong> de Baja California, México.",
+    "description": "Especialista en HTML5, CSS5, JavaScript ES6+, Vue.js y Wix.",
+    "cta": "Descargar CV",
+    "download_cv": "/public/CVes.pdf"
   },
   "experience": {
     "title": "Experiencia laboral",
     "jobs": {
-      "jobs_title": ["Freelance", "HD Media Nicaragua"],
+      "jobs_title": ["Alibre.io", "Ahorrolibre Inc."],
       "jobs_description": [
         {
-          "title": "Desarrollador Web Frontend",
-          "time": ["Dic 2021"],
-          "description": "Creo sitios web con diseños modernos y aplicando buenas prácticas de UI/UX. También me encargo de rediseñar, optimizar el posicionamiento SEO, aumentar las medidas de seguridad y optimizar el rendimiento de velocidad de sitios web, para aumentar la taza de conversión y las visitas.",
-          "list": ["Diseño de sitios web", "Optimización de sitios web"]
+          "title": "Desarrollador Frontend",
+          "time": ["Julio 2019", "Agosto 2024"],
+          "description": "Responsable del diseño y desarrollo de soluciones específicas para las problemáticas de la empresa, colaborando con varias zonas dentro de la empresa para mejorar la experiencia del usuario final y a su vez optimizando los procesos internos mediante implementación de nuevas funcionalidades, rediseños en plataformas web y en la App",
+          "list": ["Lideré un rediseño completo de la App principal basado en datos de usuarios, lo que incrementó significativamente la satisfacción y usabilidad", "Desarrollé y optimicé funcionalidades clave en el ERP, aumentando la eficiencia operativa en un 70%", "Implementé un ERP desde cero, ahorrando más de 10 horas de trabajo semanal al equipo operativo", "Colaboré con diseñadores y desarrolladores en el rediseño de la App principal para mejorar la experiencia de usuario", "Desarrollé landing pages para productos en fase de prueba, mejorando su visibilidad ante los clientes", "Mantuve y actualicé las páginas web de la empresa, asegurando que la información estuviera siempre actualizada para los usuarios"],
+          "languages": ["#HTML", "#CSS", "#Javascript", "#Vue.js", "#Figma"]
         },
         {
-          "title": "Desarrollador Web en WordPress",
+          "title": "Desarrollador Frontend",
           "time": ["Nov 2020", "Oct 2021"],
-          "description": "Me encargué de desarrollar sitios web en WordPress para clientes de Nicaragua, durante mi tiempo en la agencia aporté mi conocimiento en seguridad web aumentando las medidas y disminuyendo las brechas de seguridad en WordPress, configurando plugins y estableciendo cabeceras HTTP como Content-Security-Policy (CSP), Cross-Origin-Resource-Policy (CORP), Cross-Origin-Opener-Policy (COOP), etc.",
-          "list": ["Diseño de sitios web", "Optimización de sitios web"]
+          "description": "Trabajé en el desarrollo de soluciones innovadoras, centrándome en la creación de funcionalidades y pruebas unitarias para las Apps tanto Android como iOS. Mi enfoque fue mejorar la experiencia del usuario y garantizar la calidad del código",
+          "list": ["Desarrollo de Widget para el rastreo continuo en los productos activos", "Desarrollo de secciones específicas dentro de las Apps", "Integración de pruebas unitarias en Apps usando JUnit (Android) y XCTest (iOS)"],
+          "languages": ["#Java", "#Kotlin", "#Swift", "#JUnit", "#XCTest"]
+        },
+        {
+          "title": "Prácticas",
+          "time": ["Nov 2020", "Oct 2021"],
+          "description": "Aprendí las mejores prácticas de código (DRY, KISS, Documentación, patrones de diseño), lenguajes de programación principalmente PHP y Javascript, paradigmas de programación (Imperativa, OOP, Funcional), base de datos (relacionales y no relacionales), entendimiento de uso de Herramientas e IDE, pruebas unitarias y depuración",
+          "list": ["Desarrollo de Apps con integración de API's", "Integración de pruebas unitarias en Web usando Jest"],
+          "languages": ["#Java", "#Swift", "#PHP", "#Javascript", "#HTML", "#CSS"]
         }
       ]
     }
@@ -119,8 +129,8 @@
   },
   "about": {
     "title": "Sobre mí",
-    "subtitle": "Soy mod de Midudev y ManzDev pero más feliz me siento siendo mod de AnaRangel",
-    "description": "Soy un Desarrollador Web Frontend y WordPress con más de 3 años de experiencia, especializado en crear diseños modernos y optimizar el rendimiento web, con un enfoque en tecnologías como HTML 5, CSS 3, JavaScript ES6+ y WordPress. Manejo frameworks como React y Astro, y soy experto en constructores visuales de WordPress, además de tener un fuerte conocimiento técnico en Core Web Vitals, lo que me convierte en un profesional apasionado y altamente cualificado para cualquier proyecto de desarrollo web."
+    "subtitle": "Soy un desarrollador Frontend que toma sus desiciones basados en datos",
+    "description": "Soy un desarrollador frontend con más de 5 años de experiencia en la creación de soluciones digitales innovadoras. Mi enfoque está en mejorar la experiencia de usuario y optimizar la eficiencia operativa a través del desarrollo de interfaces web y aplicaciones móviles. A lo largo de mi carrera, he liderado proyectos de rediseño, implementado ERPs que han ahorrado horas de trabajo semanales, y he colaborado con equipos de diseño y desarrollo para entregar productos de alto impacto. Además, me especializo en tecnologías modernas como Vue.js, Figma, Kotlin y Swift, y tengo un fuerte enfoque en la calidad de código mediante pruebas unitarias."
   },
   "contact": {
     "title": "¿Listo para dar vida a tus ideas?",

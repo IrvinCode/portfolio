@@ -3,7 +3,7 @@ import { Icon } from 'astro-icon/components'
 import { t } from 'i18n:astro'
 import Button from '@components/Button.astro'
 
-const { cta } = t('hero', {
+const { cta, download_cv } = t('hero', {
   returnObjects: true
 })
 const { title, subtitle } = t('contact', {
@@ -15,8 +15,8 @@ const { title, subtitle } = t('contact', {
   <h2 class="headline-1">{title}</h2>
   <h3 class="headline-2">{subtitle}</h3>
   <div class="buttons-container">
-    <Button class="filled" href="#">{cta}</Button>
-    <Button href="#">
+    <Button class="filled" href={download_cv} download="CV-IrvinGarcia.pdf">{cta}</Button>
+    <Button href="https://www.linkedin.com/in/irvinsgarcia/" target="_blank">
       <Icon name="linkedin" size={24} />
       <span>LinkedIn</span>
     </Button>
