@@ -1,0 +1,80 @@
+.language-toggle-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #646cff 0%, #535bf2 100%);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(100, 108, 255, 0.4);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.language-toggle-btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 12px 32px rgba(100, 108, 255, 0.6);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.language-toggle-btn:active {
+    transform: translateY(-2px) scale(1.02);
+}
+
+.language-toggle-btn .flag {
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Animación al cambiar de idioma */
+.language-toggle-btn:active .flag {
+    animation: spin 0.5s ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(0.8);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .language-toggle-btn {
+        width: 56px;
+        height: 56px;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+
+    .language-toggle-btn .flag {
+        font-size: 1.8rem;
+    }
+}

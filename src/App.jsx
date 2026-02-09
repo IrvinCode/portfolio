@@ -7,24 +7,22 @@ import { SkillsSection } from './components/SkillsSection'
 import { Education } from './components/Education'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
-import { cvData } from './data/cvData'
+import { LanguageToggle } from './components/LanguageToggle'
+import { LanguageProvider } from './context/LanguageContext'
 
 function App() {
   return (
-    <>
+    <LanguageProvider>
       <Navbar />
-      <Hero
-        name={cvData.personal.name}
-        title={cvData.personal.title}
-        description={cvData.personal.subtitle}
-      />
+      <Hero />
       <About />
       <Experience />
       <SkillsSection />
       <Education />
       <Contact />
       <Footer />
-    </>
+      <LanguageToggle />
+    </LanguageProvider>
   )
 }
 
