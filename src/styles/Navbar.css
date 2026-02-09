@@ -43,6 +43,8 @@
     cursor: pointer;
     font-weight: 600;
     transition: transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .navbar-cta:hover {

@@ -7,18 +7,27 @@
     min-height: 80vh;
 }
 
+.hero-greeting {
+    font-size: 1.2rem;
+    color: #10b981;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
 .hero-name {
     font-size: 4rem;
     margin-bottom: 0.5rem;
     background: linear-gradient(90deg, #646cff, #a855f7);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .hero-title {
     font-size: 2.5rem;
-    color: #888;
-    margin-bottom: 1.5rem;
+    color: #f8fafc;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .hero-description {
@@ -26,6 +35,7 @@
     margin: 0 auto 2rem;
     font-size: 1.2rem;
     line-height: 1.6;
+    color: #cbd5e1;
 }
 
 .hero-buttons {
@@ -42,6 +52,8 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn-primary {
@@ -59,4 +71,9 @@
 .btn-primary:hover {
     background: #535bf2;
     box-shadow: 0 0 20px rgba(100, 108, 255, 0.4);
+}
+
+.btn-secondary:hover {
+    background: rgba(100, 108, 255, 0.1);
+    border-color: #535bf2;
 }

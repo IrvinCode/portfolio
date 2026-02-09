@@ -1,14 +1,14 @@
 import '../styles/Footer.css';
+import { cvData } from '../data/cvData';
 
 export const Footer = () => {
     return (
         <footer className="portfolio-footer">
             <div className="footer-content">
-                <p>© {new Date().getFullYear()} Nombre del Desarrollador. Hecho con React.</p>
+                <p>© {new Date().getFullYear()} {cvData.personal.name}. Hecho con React.</p>
                 <div className="social-links">
-                    <a href="#">GitHub</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">Twitter</a>
+                    <a href={cvData.social.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href={cvData.social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </div>
             </div>
         </footer>
