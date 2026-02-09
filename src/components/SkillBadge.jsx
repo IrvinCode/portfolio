@@ -1,4 +1,4 @@
-import './SkillBadge.css';
+import '../styles/SkillBadge.css';
 
 export const SkillBadge = ({ name, icon }) => {
     return (

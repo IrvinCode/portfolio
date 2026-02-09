@@ -1,4 +1,4 @@
-import './Hero.css';
+import '../styles/Hero.css';
 
 export const Hero = ({ name, title, description }) => {
     return (
