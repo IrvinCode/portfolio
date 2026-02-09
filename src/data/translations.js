@@ -6,8 +6,7 @@ export const translations = {
             experience: "Experiencia",
             skills: "Habilidades",
             education: "Educación",
-            contact: "Contacto",
-            hire: "Contrátame"
+            contact: "Contacto"
         },
 
         // Hero Section
@@ -167,8 +166,7 @@ export const translations = {
             experience: "Experience",
             skills: "Skills",
             education: "Education",
-            contact: "Contact",
-            hire: "Hire Me"
+            contact: "Contact"
         },
 
         // Hero Section

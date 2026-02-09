@@ -1,10 +1,23 @@
 .portfolio-hero {
-    padding: 8rem 2rem;
-    text-align: center;
+    padding: 6rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.hero-text {
+    flex: 1;
 }
 
 .hero-greeting {
@@ -15,35 +28,193 @@
 }
 
 .hero-name {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 0.5rem;
     background: linear-gradient(90deg, #646cff, #a855f7);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    line-height: 1.1;
 }
 
 .hero-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #f8fafc;
     margin-bottom: 1rem;
     font-weight: 600;
 }
 
 .hero-description {
-    max-width: 600px;
-    margin: 0 auto 2rem;
+    max-width: 500px;
     font-size: 1.2rem;
     line-height: 1.6;
     color: #cbd5e1;
+    margin-bottom: 2rem;
 }
 
 .hero-buttons {
     display: flex;
     gap: 1rem;
+}
+
+/* ===== Specialized Hero Photo Design ===== */
+.hero-photo {
+    flex-shrink: 0;
+}
+
+.hero-photo-frame {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
+/* Animated outer ring */
+.hero-photo-ring--outer {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 2px dashed rgba(100, 108, 255, 0.25);
+    animation: spin-slow 30s linear infinite;
+}
+
+/* Inner gradient ring */
+.hero-photo-ring--inner {
+    position: absolute;
+    inset: 15px;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg,
+            #646cff,
+            #a855f7,
+            #10b981,
+            #646cff);
+    padding: 3px;
+    animation: spin-reverse 20s linear infinite;
+}
+
+.hero-photo-ring--inner::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    border-radius: 50%;
+    background: #242424;
+}
+
+/* Photo wrapper */
+.hero-photo-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow:
+        0 0 40px rgba(100, 108, 255, 0.12),
+        0 20px 60px rgba(0, 0, 0, 0.4);
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hero-photo-frame:hover .hero-photo-wrapper {
+    transform: scale(1.03);
+}
+
+.hero-photo-frame:hover .hero-photo-ring--outer {
+    border-color: rgba(100, 108, 255, 0.5);
+}
+
+.hero-photo-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: saturate(0.9) contrast(1.05);
+    transition: filter 0.5s;
+}
+
+.hero-photo-frame:hover .hero-photo-wrapper img {
+    filter: saturate(1.1) contrast(1.05);
+}
+
+/* Decorative dot pattern */
+.hero-photo-decoration--dots {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 80px;
+    height: 80px;
+    background-image: radial-gradient(circle, rgba(100, 108, 255, 0.4) 1.5px, transparent 1.5px);
+    background-size: 12px 12px;
+    z-index: 1;
+    opacity: 0.7;
+    transition: opacity 0.4s;
+}
+
+.hero-photo-frame:hover .hero-photo-decoration--dots {
+    opacity: 1;
+}
+
+/* Accent arc */
+.hero-photo-decoration--accent {
+    position: absolute;
+    bottom: -8px;
+    left: -8px;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #10b981;
+    border-radius: 50%;
+    clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+    z-index: 1;
+    opacity: 0.6;
+    transition: opacity 0.4s;
+}
+
+.hero-photo-frame:hover .hero-photo-decoration--accent {
+    opacity: 1;
+}
+
+/* Glow effect on hover */
+.hero-photo-frame::after {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle,
+            rgba(100, 108, 255, 0.06) 0%,
+            transparent 70%);
+    z-index: 0;
+    transition: background 0.5s;
+}
+
+.hero-photo-frame:hover::after {
+    background: radial-gradient(circle,
+            rgba(100, 108, 255, 0.12) 0%,
+            transparent 70%);
+}
+
+/* Animations */
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-reverse {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/* Buttons */
 .btn-primary,
 .btn-secondary {
     padding: 0.8rem 2rem;
@@ -76,4 +247,56 @@
 .btn-secondary:hover {
     background: rgba(100, 108, 255, 0.1);
     border-color: #535bf2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .portfolio-hero {
+        padding: 4rem 1.5rem;
+        min-height: auto;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2.5rem;
+    }
+
+    .hero-name {
+        font-size: 2.5rem;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-description {
+        margin: 0 auto 2rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-photo-frame {
+        width: 240px;
+        height: 240px;
+    }
+
+    .hero-photo-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-photo-decoration--dots {
+        width: 50px;
+        height: 50px;
+        top: -10px;
+        right: -10px;
+    }
+
+    .hero-photo-decoration--accent {
+        width: 40px;
+        height: 40px;
+    }
 }

@@ -16,11 +16,6 @@ export const About = () => {
                     <div className="header-underline"></div>
                 </div>
                 <div className="about-content">
-                    <div className="profile-image-placeholder">
-                        <div className="image-circle">
-                            <span className="initial">{cvData.personal.name.charAt(0)}</span>
-                        </div>
-                    </div>
                     <div className="profile-text">
                         <h3 className="profile-title">{translations[language].hero.title}</h3>
                         <p className="profile-description">{profile}</p>
