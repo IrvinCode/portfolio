@@ -1,0 +1,25 @@
+.skill-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: #1a1a1a;
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s;
+}
+
+.skill-badge:hover {
+    background: #252525;
+    border-color: #646cff;
+    transform: translateY(-2px);
+}
+
+.skill-name {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.skill-icon {
+    font-size: 1.2rem;
+}
