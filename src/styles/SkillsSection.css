@@ -1,5 +1,7 @@
+/* ===== SKILLS — Mobile First ===== */
+
 .skills-section {
-    padding: 6rem 2rem;
+    padding: 3rem 1.25rem;
     background: linear-gradient(180deg, rgba(16, 185, 129, 0.03), transparent);
 }
 
@@ -10,13 +12,13 @@
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
 
 .skill-category {
     background: rgba(30, 30, 30, 0.4);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.3s;
@@ -29,9 +31,9 @@
 }
 
 .category-title {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     color: #10b981;
     border-bottom: 2px solid rgba(16, 185, 129, 0.2);
     padding-bottom: 0.5rem;
@@ -40,11 +42,37 @@
 .skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.8rem;
+    gap: 0.6rem;
 }
 
-@media (max-width: 768px) {
+/* ===== Tablet (480px+) ===== */
+@media (min-width: 480px) {
     .skills-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===== Desktop (769px+) ===== */
+@media (min-width: 769px) {
+    .skills-section {
+        padding: 6rem 2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2.5rem;
+    }
+
+    .skill-category {
+        padding: 2rem;
+    }
+
+    .category-title {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .skills-list {
+        gap: 0.8rem;
     }
 }

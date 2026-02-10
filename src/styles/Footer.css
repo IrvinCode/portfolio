@@ -1,7 +1,9 @@
+/* ===== FOOTER — Mobile First ===== */
+
 .portfolio-footer {
-    padding: 4rem 2rem;
+    padding: 2.5rem 1.25rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 4rem;
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -10,11 +12,18 @@
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    font-size: 0.85rem;
+    color: #94a3b8;
 }
 
 .social-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.25rem;
 }
 
 .social-links a {
@@ -22,8 +31,18 @@
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.3s;
+    /* Touch-friendly */
+    padding: 0.4rem;
 }
 
 .social-links a:hover {
     color: #646cff;
+}
+
+/* ===== Desktop (769px+) ===== */
+@media (min-width: 769px) {
+    .portfolio-footer {
+        padding: 4rem 2rem;
+        margin-top: 4rem;
+    }
 }

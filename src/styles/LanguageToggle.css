@@ -1,9 +1,11 @@
+/* ===== LANGUAGE TOGGLE — Mobile First ===== */
+
 .language-toggle-btn {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    width: 60px;
-    height: 60px;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: linear-gradient(135deg, #646cff 0%, #535bf2 100%);
     border: 3px solid rgba(255, 255, 255, 0.2);
@@ -15,6 +17,9 @@
     transition: all 0.3s ease;
     z-index: 1000;
     overflow: hidden;
+    /* Ensure touch target minimum */
+    min-width: 48px;
+    min-height: 48px;
 }
 
 .language-toggle-btn:hover {
@@ -28,7 +33,7 @@
 }
 
 .language-toggle-btn .flag {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 1;
     margin-bottom: 0.5rem;
     animation: pulse 2s ease-in-out infinite;
@@ -46,12 +51,11 @@
     }
 }
 
-/* Animación al cambiar de idioma */
 .language-toggle-btn:active .flag {
-    animation: spin 0.5s ease-in-out;
+    animation: lang-spin 0.5s ease-in-out;
 }
 
-@keyframes spin {
+@keyframes lang-spin {
     0% {
         transform: rotate(0deg) scale(1);
     }
@@ -65,16 +69,16 @@
     }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* ===== Desktop (769px+) ===== */
+@media (min-width: 769px) {
     .language-toggle-btn {
-        width: 56px;
-        height: 56px;
-        bottom: 1.5rem;
-        right: 1.5rem;
+        width: 60px;
+        height: 60px;
+        bottom: 2rem;
+        right: 2rem;
     }
 
     .language-toggle-btn .flag {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 }

@@ -1,6 +1,8 @@
+/* ===== NAVBAR — Mobile First ===== */
+
 .portfolio-navbar {
-    padding: 1rem 2rem;
-    background: rgba(10, 10, 10, 0.85);
+    padding: 0.75rem 1rem;
+    background: rgba(10, 10, 10, 0.92);
     backdrop-filter: blur(12px);
     position: sticky;
     top: 0;
@@ -12,57 +14,94 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .navbar-logo {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: var(--primary, #646cff);
     white-space: nowrap;
 }
 
-.navbar-links {
+/* ===== Hamburger Button (visible on mobile) ===== */
+.navbar-hamburger {
     display: flex;
-    list-style: none;
-    gap: 2rem;
-    padding: 0;
-    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
 }
 
-.navbar-links a {
+.hamburger-line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #f8fafc;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.navbar-hamburger.is-active .hamburger-line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-hamburger.is-active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-hamburger.is-active .hamburger-line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ===== Nav Links (mobile = dropdown) ===== */
+.navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    padding: 1rem 0 0.5rem;
+    margin: 0;
+    gap: 0;
+    order: 3;
+}
+
+.navbar-links.is-open {
+    display: flex;
+}
+
+.navbar-links li a {
+    display: block;
+    padding: 0.75rem 0;
     text-decoration: none;
     color: #94a3b8;
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 1rem;
     transition: color 0.3s;
-    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.navbar-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--primary, #646cff);
-    transition: width 0.3s;
+.navbar-links li:last-child a {
+    border-bottom: none;
 }
 
-.navbar-links a:hover {
+.navbar-links li a:hover {
     color: #f8fafc;
 }
 
-.navbar-links a:hover::after {
-    width: 100%;
-}
-
-/* Social Icons */
+/* ===== Social Icons ===== */
 .navbar-social {
     display: flex;
-    gap: 0.75rem;
+    gap: 0.5rem;
     align-items: center;
 }
 
@@ -70,8 +109,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
     border-radius: 8px;
     color: #94a3b8;
     background: rgba(255, 255, 255, 0.05);
@@ -88,21 +127,56 @@
     box-shadow: 0 4px 12px rgba(100, 108, 255, 0.15);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* ===== Tablet+ (769px) ===== */
+@media (min-width: 769px) {
     .portfolio-navbar {
-        padding: 1rem 1.5rem;
-    }
-
-    .navbar-links {
-        display: none;
-    }
-
-    .navbar-inner {
-        justify-content: space-between;
+        padding: 1rem 2rem;
     }
 
     .navbar-logo {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+    }
+
+    /* Hide hamburger */
+    .navbar-hamburger {
+        display: none;
+    }
+
+    /* Show links inline */
+    .navbar-links {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        padding: 0;
+        gap: 2rem;
+        order: 0;
+    }
+
+    .navbar-links li a {
+        display: inline;
+        padding: 0;
+        font-size: 0.95rem;
+        border-bottom: none;
+        position: relative;
+    }
+
+    .navbar-links li a::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--primary, #646cff);
+        transition: width 0.3s;
+    }
+
+    .navbar-links li a:hover::after {
+        width: 100%;
+    }
+
+    .social-icon-link {
+        width: 38px;
+        height: 38px;
     }
 }
