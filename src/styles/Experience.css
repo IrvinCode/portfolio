@@ -31,7 +31,7 @@
     content: '';
     position: absolute;
     left: 0;
-    top: 0;
+    top: 1rem;
     bottom: 0;
     width: 2px;
     background: linear-gradient(180deg, #646cff, #10b981);
@@ -45,7 +45,7 @@
 
 .timeline-marker {
     position: absolute;
-    left: -1.25rem;
+    left: -1.6rem;
     top: 0.5rem;
     width: 14px;
     height: 14px;
@@ -170,7 +170,7 @@
     }
 
     .timeline-marker {
-        left: -2rem;
+        left: -2.4rem;
         width: 16px;
         height: 16px;
     }
