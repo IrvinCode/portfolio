@@ -14,12 +14,14 @@ function App() {
   return (
     <LanguageProvider>
       <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <SkillsSection />
-      <Education />
-      <Contact />
+      <main id="main-content">
+        <Hero />
+        <About />
+        <Experience />
+        <SkillsSection />
+        <Education />
+        <Contact />
+      </main>
       <Footer />
       <LanguageToggle />
     </LanguageProvider>

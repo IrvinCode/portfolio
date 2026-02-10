@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-pi-navy-qi9h2tdjr5.vercel.app/sitemap.xml
